@@ -50,6 +50,15 @@ result = False or False # False
 # s'il n'y a que des "or", l'ordre n'est pas important
 result = True or False or True or False # True
 
+result = not False
+print(result)
+
+# opérateur de négation "not"
+is_user_majeur = True
+result = not is_user_majeur
+# éqauivalent à
+# result = is_user_majeur == False
+
 # opérateur booléen "xor", le "ou exclusif"
 result = True ^ True # False
 result = False ^ True # True
@@ -65,3 +74,39 @@ number = 42
 # number = number + 1
 n = 1
 number += n
+
+# == != < > <= >=
+
+a = 123
+b = 42
+
+# égal
+result = a == b
+print(result)
+
+# différent
+result = a != b
+print(result)
+
+# inférieur ou égal
+result = a <= b
+print(result)
+
+# l'opérateur == fait office de comparaison d'identité
+a = "123"
+b = 123
+result = a == b
+print(result)
+
+# pas en python
+# === !==
+
+fruits = ["apple", "banana", "cherry"]
+result = "banana" in fruits
+print(result)
+
+result = "orange" in fruits
+print(result)
+
+result = type(123) is float
+print(result)
