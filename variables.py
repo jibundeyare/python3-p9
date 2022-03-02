@@ -141,3 +141,7 @@ print(my_var)
 my_var = None
 my_var = bool(my_var)
 print(my_var)
+
+n = 34.14
+n = bool(int(n))
+print(n)
