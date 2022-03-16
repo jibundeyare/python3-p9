@@ -110,3 +110,18 @@ print(result)
 
 result = type(123) is float
 print(result)
+
+# encadrement
+import random
+
+a = 42
+b = 123
+
+c = random.randint(1, 150)
+
+result = a < 50 < b
+print(result)
+
+result = a < c < b
+print(c)
+print(result)
