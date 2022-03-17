@@ -50,7 +50,7 @@ print(len(texte))
 
 # find() -> int
 # find() -> int >= 0 si le texte est trouvé
-# find() -> int < 0 si le texte n'est pas trouvé
+# find() -> int == -1 si le texte n'est pas trouvé
 
 print(texte.find("ba"))
 # recherche à partir du caractère 5 inclus
@@ -69,4 +69,9 @@ keyword = "Toto"
 # sinon affichez "non trouvé"
 keyword = "Titi"
 
-
+# remplacement
+texte = "Bnjour  Toto"
+texte = texte.replace('Bnjour', 'Bonjour')
+texte = texte.replace('  ', ' ')
+texte = texte.replace('Toto', 'Titi')
+print(texte)
