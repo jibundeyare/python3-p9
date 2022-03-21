@@ -138,7 +138,40 @@ result = splitted_text[start:]
 end = 10
 result = splitted_text[:end]
 
+# création d'une liste vide
 my_list = []
+print(my_list)
+
+# mode pile
+# équivalent d'un push()
 my_list.append("foo")
+print(my_list)
 my_list.append(123)
+print(my_list)
 my_list.append(3.14)
+print(my_list)
+
+last_element = my_list.pop()
+print(my_list)
+print(last_element)
+
+# mode file
+my_list = ["toto", "titi", "tata"]
+
+# équivalent d'un push()
+my_list.append("tutu")
+print(my_list)
+
+# équivalent d'un shift()
+client = my_list.pop(0)
+print(my_list)
+print(client)
+
+# mode liste
+print(my_list[0])
+del(my_list[0])
+print(my_list)
+
+# équivalent d'un unshift()
+my_list.insert(0, "mémé")
+print(my_list)
