@@ -60,6 +60,8 @@ for i, mot in enumerate(mots):
     print(f"mot (reco) {i}:", mot)
 
 # affichage des nombres de 0 à 10 avec un "pas" (step) de 2
+# la fonction range() prend un troisième paramètre qui indique le "pas" (step)
+# il est possible d'utiliser un "pas" (step) négatif pour décrémenter le compteur
 for i in range(0, 10, 2):
     print(i)
 
@@ -84,16 +86,20 @@ for i in range(start, end + 1):
         print(i)
 
 # exo : affichez les nombres de 10 à 1 inclus à rebours
-# info : la fonction range() prend un troisième paramètre qui indique le "pas" (step)
+start = 10
+end = 1
+step = -1
+for i in range(start, end - 1, step):
+    print(i)
 
-# algo : tirage de 2 nombres différents parmi 5
+# algo : tirage de 4 nombres différents parmi 5
 numbers = []
 
 # 1er tirage
 n = random.randint(1, 5)
 numbers.append(n)
 
-# 2ème tirage
+# 2ème, 3ème et 4ème tirage
 while True:
     n = random.randint(1, 5)
 
@@ -104,4 +110,5 @@ while True:
         break
 
 numbers.append(n)
+
 print(numbers)
