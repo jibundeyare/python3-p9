@@ -63,9 +63,27 @@ for i, mot in enumerate(mots):
 for i in range(0, 10, 2):
     print(i)
 
-# exo : affichez les nombres de 100 à 999 avec une boucle for
-# exo : affichez les nombres de 0 à 20 qui sont multiples de 3
-# exo : affichez les nombres de 10 à 1 à rebours
+# exo : affichez les nombres de 100 à 999 inclus avec une boucle for
+start = 100
+end = 999
+for i in range(start, end + 1):
+    print(i)
+
+# exo : affichez les nombres de 0 à 20 inclus qui sont multiples de 3
+start = 0
+end = 20
+step = 3
+for i in range(start, end + 1, step):
+    print(i)
+
+# exo : même question mais avec une autre méthode
+start = 0
+end = 20
+for i in range(start, end + 1):
+    if i % 3 == 0:
+        print(i)
+
+# exo : affichez les nombres de 10 à 1 inclus à rebours
 # info : la fonction range() prend un troisième paramètre qui indique le "pas" (step)
 
 # algo : tirage de 2 nombres différents parmi 5
