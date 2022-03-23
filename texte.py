@@ -1,4 +1,5 @@
 import random
+from datetime import date
 
 firstname = "toto"
 lastname = "pop"
@@ -41,6 +42,12 @@ if electricite:
     print('electricite: vrai')
 else:
     print('electricite: faux')
+
+# afficher âge à partir de l'année de naissance
+annee_naissance = 2000
+annee_courante = date.today().year
+print(f"age: {annee_courante - annee_naissance}")
+
 
 print(f"le nombre tiré au hasard est : {random.randint(0, 10)}")
 #        0123456789A
