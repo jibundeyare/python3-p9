@@ -1,10 +1,10 @@
 import random
 
 # les types de boucle :
-# - while
-# - do while
-# - for classique
-# - for each
+# - while : cas où on ne sait pas combien de fois il faut répéter une action (répéter de 0 fois à +infini)
+# - do while : cas où on ne sait pas combien de fois il faut répéter une action mais il faut le faire au moins une fois (répéter de 1 fois à +infini)
+# - for classique (n'existe pas en python) : cas où on sait combien de fois il faut répéter l'action (répéter n fois)
+# - for each (boucle for en python) : cas où on veut passer en revue tous les éléments d'une liste (répéter autant de fois que d'éléments dans la liste)
 
 # reproduction d'une boucle for classique avec une boucle while
 # condition d'initialisation
@@ -100,15 +100,34 @@ n = random.randint(1, 5)
 numbers.append(n)
 
 # 2ème, 3ème et 4ème tirage
-while True:
-    n = random.randint(1, 5)
+for i in range(0, 3):
+    while True:
+        n = random.randint(1, 5)
 
-    # condition d'arrêt
-    if n not in numbers:
-        # le nombre n'a pas encore été tiré au hasard
-        # on peut sortir de la boucle
-        break
+        # condition d'arrêt
+        if n not in numbers:
+            # le nombre n'a pas encore été tiré au hasard
+            # on peut sortir de la boucle
+            break
 
-numbers.append(n)
+    numbers.append(n)
+
+print(numbers)
+
+# algo : tirage de 4 nombres différents parmi 5 (variante)
+numbers = []
+
+# 1er, 2ème, 3ème et 4ème tirage
+for i in range(4):
+    while True:
+        n = random.randint(1, 5)
+
+        # condition d'arrêt
+        if n not in numbers:
+            # le nombre n'a pas encore été tiré au hasard
+            # on peut sortir de la boucle
+            break
+
+    numbers.append(n)
 
 print(numbers)
