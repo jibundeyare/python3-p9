@@ -42,6 +42,32 @@ for counter in range(0, 10):
     # action à répéter
     print('for python:', counter)
 
+# for de python
+mots = ['foo', 'bar', 'baz']
+
+# ATTENTION méthode non recommandée pour boucler sur tous les éléments d'une liste
+for i in range(0, len(mots)):
+    # action à répéter
+    print(f"mot (non reco) {i}:", mots[i])
+
+# méthode recommandée pour boucler sur tous les éléments d'une liste
+for mot in mots:
+    # action à répéter
+    print("mot (reco):", mot)
+
+for i, mot in enumerate(mots):
+    # action à répéter
+    print(f"mot (reco) {i}:", mot)
+
+# affichage des nombres de 0 à 10 avec un "pas" (step) de 2
+for i in range(0, 10, 2):
+    print(i)
+
+# exo : affichez les nombres de 100 à 999 avec une boucle for
+# exo : affichez les nombres de 0 à 20 qui sont multiples de 3
+# exo : affichez les nombres de 10 à 1 à rebours
+# info : la fonction range() prend un troisième paramètre qui indique le "pas" (step)
+
 # algo : tirage de 2 nombres différents parmi 5
 numbers = []
 
