@@ -8,9 +8,9 @@
 
 # O(c) (c == constante)
 # O(1)
+# + - * / // **2
 result = 123 + 42
 print(result)
-
 
 # recherche par dicothomie
 # recherche d'un fruit dont la lettre démarre par une lettre
@@ -87,6 +87,16 @@ for square in cube:
 # 5! == 5 * 4 * 3 * 2
 
 # exo 1 : déterminez la complexité algorithmique de ce programme
+# O(n)
+numbers = [4, 10, 42, 3.14]
+my_list = []
+
+for n in numbers:
+    # puissance 2
+    result = n ** 2
+    my_list.append(result)
+
+# exo 2 : déterminez la complexité algorithmique de ce programme
 # O(?)
 numbers = [4, 10, 42, 3.14]
 my_list = []
@@ -97,13 +107,3 @@ while True:
 
     if len(numbers) == 0:
         break
-
-# exo 2 : déterminez la complexité algorithmique de ce programme
-# O(?)
-numbers = [4, 10, 42, 3.14]
-my_list = []
-
-for n in numbers:
-    # puissance 2
-    result = n ** 2
-    my_list.append(result)
