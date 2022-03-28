@@ -85,3 +85,25 @@ for square in cube:
 # O(n ** n)
 # O(n!) == O(n * (n - 1) * (n - 2) * ... * 2)
 # 5! == 5 * 4 * 3 * 2
+
+# exo 1 : déterminez la complexité algorithmique de ce programme
+# O(?)
+numbers = [4, 10, 42, 3.14]
+my_list = []
+
+while True:
+    number = numbers.pop()
+    my_list.append(number)
+
+    if len(numbers) == 0:
+        break
+
+# exo 2 : déterminez la complexité algorithmique de ce programme
+# O(?)
+numbers = [4, 10, 42, 3.14]
+my_list = []
+
+for n in numbers:
+    # puissance 2
+    result = n ** 2
+    my_list.append(result)
