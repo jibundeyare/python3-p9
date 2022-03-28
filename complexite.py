@@ -11,6 +11,13 @@
 result = 123 + 42
 print(result)
 
+
+# recherche par dicothomie
+# recherche d'un fruit dont la lettre démarre par une lettre
+# O(log(n))
+# log == logarithme naturel
+words = ['ananas', 'banane', 'cerise', 'durian', 'kiwi', 'orange', 'pomme']
+
 # O(n)
 # n est la quantité de données à traiter
 numbers = [123, 42, 3.14]
@@ -18,6 +25,13 @@ numbers = [123, 42, 3.14]
 for number in numbers:
     result = number * 2
     print(result)
+
+# recherche par dicothomie dans une liste
+# O(n * log(n))
+my_list = [
+    ['ananas', 'banane', 'cerise', 'durian', 'kiwi', 'orange', 'pomme'],
+    [0, 1, 2, 3, 3.14, 42, 53, 123, 999]
+]
 
 # O(n * m) == O(n * n) == O(n²)
 # n est la quantité de données à traiter de la première liste
@@ -66,3 +80,8 @@ for square in cube:
     for line in square:
         for spot in line:
             print(spot)
+
+# Algorithmes pas efficaces du tout
+# O(n ** n)
+# O(n!) == O(n * (n - 1) * (n - 2) * ... * 2)
+# 5! == 5 * 4 * 3 * 2
