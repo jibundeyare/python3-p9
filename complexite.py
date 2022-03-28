@@ -86,6 +86,20 @@ for square in cube:
 # O(n!) == O(n * (n - 1) * (n - 2) * ... * 2)
 # 5! == 5 * 4 * 3 * 2
 
+# exemple d'optimisation
+# O(n)
+numbers = [4, 10, 42, 3.14]
+# initialisation du compteur
+i = 0
+# sauver la taille du tableau dans une variable
+size = len(numbers)
+# vérification de la condition de continuation
+while i < size:
+    # action à répéter
+    print(numbers[i])
+    # incrémentation du compteur
+    i += 1
+
 # exo 1 : déterminez la complexité algorithmique de ce programme
 # O(n)
 numbers = [4, 10, 42, 3.14]
