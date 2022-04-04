@@ -84,3 +84,4 @@ if random.randint(0, 9) < 5:
 # Réponse 2.3
 while True:
     pass
+
