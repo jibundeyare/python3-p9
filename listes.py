@@ -175,3 +175,14 @@ print(my_list)
 # équivalent d'un unshift()
 my_list.insert(0, "mémé")
 print(my_list)
+
+# concaténation de listes
+list_a = ["a", "b", "c"]
+list_b = [1, 2, 3]
+
+list_c = list_a + list_b
+print(list_c)
+
+# fusion de listes (modification de l'originale)
+list_a.extend(list_b)
+print(list_a)
