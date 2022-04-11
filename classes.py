@@ -6,6 +6,10 @@ print(v1)
 # Il ne faut pas afficher directement ces variables car elles sont considérées comme si elles étaient privées.
 # C-à-d qu'ellesd sont toutes préfixées d'un underscore "_".
 # print(v1.marque, v1.modele, v1.carburant, v1.type_carrosserie, v1.get_vitesse())
+print(v1.get_marque())
+print(v1.get_modele())
+print(v1.get_carburant())
+print(v1.get_type_carrosserie())
 
 print(v1.get_vitesse())
 v1.set_vitesse(10)

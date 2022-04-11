@@ -1,6 +1,6 @@
-class Voiture:
+class Camion:
     """
-    Cette classe représente une voiture.
+    Cette classe représente un camion.
     """
     def __init__(self, marque: str, modele: str, carburant: str, type_carrosserie: str, vitesse: int):
         self._marque = marque
@@ -9,21 +9,6 @@ class Voiture:
         self._type_carrosserie = type_carrosserie
         # il faut utiliser le setter s'il y a une procédure de vérification des données avant l'affectation
         self.set_vitesse(vitesse)
-
-    def __str__(self):
-        return f"{self._marque} {self._modele} {self._carburant} {self._type_carrosserie} {self._vitesse}"
-
-    def get_marque(self) -> str:
-        return self._marque
-
-    def get_modele(self) -> str:
-        return self._modele
-
-    def get_carburant(self) -> str:
-        return self._carburant
-
-    def get_type_carrosserie(self) -> str:
-        return self._type_carrosserie
 
     # getter
     def get_vitesse(self) -> int:
@@ -42,10 +27,10 @@ class Voiture:
 
     def accelerer(self):
         vitesse = self.get_vitesse()
-        vitesse += 20
+        vitesse += 10
         self.set_vitesse(vitesse)
 
     def ralentir(self):
         vitesse = self.get_vitesse()
-        vitesse -= 20
+        vitesse -= 10
         self.set_vitesse(vitesse)
