@@ -38,6 +38,7 @@ my_list.append(c2)
 for item in my_list:
     print(item._marque)
     print(item.get_vitesse())
+
     if type(item) is Voiture:
         # code spécifique aux voitures
         print(item._type_carrosserie)
@@ -51,3 +52,29 @@ for item in my_list:
 for i in range(0, len(my_list)):
     print(my_list[i]._marque)
     print(my_list[i].get_vitesse())
+
+    if type(my_list[i]) is Voiture:
+        # code spécifique aux voitures
+        print(my_list[i]._type_carrosserie)
+        print(my_list[i].get_type_carrosserie())
+
+    if type(my_list[i]) is Camion:
+        # code spécifique aux camions
+        print(my_list[i]._ptac)
+        print(my_list[i].get_ptac())
+
+# modification d'une variable de classe
+# cette variable sera modifiée pour toutes les variables de type Voiture
+Voiture._acceleration = 40
+
+print(v1.get_vitesse())
+v1.accelerer()
+print(v1.get_vitesse())
+
+print(v2.get_vitesse())
+v2.accelerer()
+print(v2.get_vitesse())
+
+print(c1.get_vitesse())
+c1.accelerer()
+print(c1.get_vitesse())
